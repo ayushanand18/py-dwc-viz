@@ -38,34 +38,7 @@
   <section id="map">
 <span id="id1"></span><h1>Map<a class="headerlink" href="#map" title="Permalink to this heading">¶</a></h1>
 <p>Visualize DwC data easily on maps.</p>
-<span class="target" id="module-pydwcviz.map"></span><dl class="py function">
-<dt class="sig sig-object py" id="pydwcviz.map.points">
-<span class="sig-prename descclassname"><span class="pre">pydwcviz.map.</span></span><span class="sig-name descname"><span class="pre">points</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">df</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">crs</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'epsg:4326'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">figsize</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">(20,</span> <span class="pre">10)</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pydwcviz.map.points" title="Permalink to this definition">¶</a></dt>
-<dd><p>Generate a point map from DwC data</p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><ul class="simple">
-<li><p><strong>df</strong> – [DataFrame] A DwC data DataFrame with at least decimalLongitude, and decimalLatitude
-as column labels</p></li>
-<li><p><strong>crs</strong> – [String] Define the CRS for the map</p></li>
-<li><p><strong>figsize</strong> – [Tuple] Define the figsize of the plot</p></li>
-</ul>
-</dd>
-<dt class="field-even">Returns</dt>
-<dd class="field-even"><p>A Matplotlib Axes Object</p>
-</dd>
-</dl>
-<p>Usage:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">pyobis</span> <span class="kn">import</span> <span class="n">occurrences</span>
-<span class="kn">from</span> <span class="nn">pydwcviz</span> <span class="kn">import</span> <span class="nb">map</span>
-
-<span class="n">ax</span> <span class="o">=</span> <span class="nb">map</span><span class="o">.</span><span class="n">points</span><span class="p">(</span><span class="n">occurrences</span><span class="o">.</span><span class="n">search</span><span class="p">(</span><span class="n">scientificname</span> <span class="o">=</span> <span class="s2">&quot;Mola mola&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">execute</span><span class="p">())</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
-</pre></div>
-</div>
-</dd></dl>
-
-</section>
+<span class="target" id="module-pydwcviz.map"></span></section>
 
 
           </div>
@@ -86,10 +59,7 @@ as column labels</p></li>
 <h3>Navigation</h3>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="diversity.html">Diversity</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Map</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#pydwcviz.map.points"><code class="docutils literal notranslate"><span class="pre">points()</span></code></a></li>
-</ul>
-</li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Map</a></li>
 <li class="toctree-l1"><a class="reference internal" href="stats.html">Stats</a></li>
 <li class="toctree-l1"><a class="reference internal" href="taxon.html">Taxon</a></li>
 </ul>
